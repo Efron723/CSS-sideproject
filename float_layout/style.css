@@ -1,0 +1,251 @@
+    /* #region reset開始 start */
+
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+
+body{
+    background-image: url("./images/bacc1.webp");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+
+.clearfloat::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+a:link,a:visited,a:active{
+    color: rgb(3, 63, 63);
+}
+
+@font-face{
+    src: url(./font/coriander.ttf);
+    font-family: coriander;
+} 
+
+@font-face {
+    font-family: painting;
+    src: url(./font/painting.ttf);
+}
+
+a{
+    font-family: coriander;
+}
+
+    /* #endregion reset結束 end */
+
+    /* #region header開始 start */
+    header {
+        margin-top: 20px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .nav {
+        font-size: 20px;
+    }
+
+    .nav li {
+        float: left;
+        list-style-type: none;
+        line-height: 50px;
+    }
+
+    .nav li a {
+        display: block;
+        width: 150px;
+        font-weight: bolder;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 20px;
+        transition: all linear 0.3s;
+    }
+
+    .nav li a:last-child {
+        margin-right: 40px;
+    }
+
+    .nav li a:hover {
+        background-color: skyblue;
+        color: #fff;
+        box-shadow: 0 0 25px skyblue;
+        font-weight: bolder;
+    }
+
+    /* #endregion header結束 end */
+
+    /*#region content開始 start*/
+
+    .content h1 {
+        font-family: "painting";
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center;
+        margin: 40px 0 30px 0;
+        letter-spacing: 60px;
+        color: transparent;
+        background-image: linear-gradient(tomato, tomato);
+        background-repeat: no-repeat;
+        background-clip: text;
+        background-position: -1100px;
+        animation: textcolor 4s linear infinite;
+    }
+
+    @keyframes textcolor {
+
+        0%{
+        
+            background-position: -1100px;
+        }
+
+        100% {
+            background-position: -200px;
+        }
+    }
+
+    .content .bx {
+        display: inline;
+        font-size: 25px;
+        margin: 0 20px;
+        vertical-align: middle;
+        line-height: 40px;
+    }
+
+    .content .ad {
+        margin: 0 auto;
+        border-bottom: 1px dashed gray;
+        width: 1300px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .ad a {
+        display: inline-block;
+        vertical-align: middle;
+        /* line-height: 40px; */
+        text-decoration: none;
+    }
+
+    .ad:hover .bx {
+        color: tomato;
+    }
+
+    .ad:hover a {
+        color: tomato;
+    }
+
+    /*#endregion content結束 end*/
+
+    /*#region banner開始 start*/
+
+    .banner {
+        margin: 0 auto;
+        width: 1300px;
+        margin-top: 50px;
+    }
+
+    .banner h1 {
+        margin-bottom: 30px;
+        font-family: "painting";
+        font-weight: 500;
+        font-size: 40px;
+        letter-spacing: 60px;
+        text-align: center;
+        color: transparent;
+        background-image: linear-gradient(tomato, tomato);
+        background-repeat: no-repeat;
+        background-clip: text;
+        animation: textcolor 4s linear infinite;
+    }
+
+    @keyframes textcolor {
+
+        0%{
+            background-position: -1100px;
+        }
+
+        100% {
+            background-position: -200px;
+        }
+    }
+
+    .banner .photo {
+        margin-top: 20px;
+        width: 400px;
+    }
+
+    .photo img {
+        cursor: pointer;
+        border-radius: 30%;
+        display: block;
+        border: 0;
+        width: 100%;
+        transition: all linear 0.3s;
+    }
+
+    .photo a {
+        width: 200px;
+        margin: 20px 0 0 100px;
+        display: block;
+        line-height: 80px;
+        font-size: 25px;
+        font-weight: bolder;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50px;
+        transition: all linear 0.3s;
+    }
+
+    .bread {
+        margin-left: 50px;
+    }
+
+    .banner .photo a:hover {
+        background-color: skyblue;
+        color: #fff;
+        box-shadow: 0 0 25px skyblue;
+        font-weight: bolder;
+    }
+
+    .banner .photo img:hover {
+        box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+        transform: scale(1.01);
+    }
+
+    /*#endregion banner結束 end*/
+
+    /*#region footer開始 start*/
+    footer {
+        font-family: "Lumanosimo";
+        font-weight: bolder;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        bottom: 0;
+        left: calc(50vw - 750px);
+    }
+
+    /*#endregion footer結束 end*/

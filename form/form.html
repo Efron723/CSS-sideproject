@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .outside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    fieldset {
+      border: 2px solid #00abf0;
+      padding: 20px;
+      border-radius: 30px;
+    }
+
+    legend {
+      font-size: 20px;
+      font-weight: bolder;
+      text-shadow: 1px 1px 1px gray;
+      margin-left: 50px;
+    }
+
+    legend em {
+      color: red;
+    }
+
+    .outside form h3 {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bolder;
+      text-shadow: 1px 1px 1px gray;
+    }
+
+    .text {
+      border-bottom: 3px dashed #00acf077;
+      margin: 20px;
+      padding-bottom: 10px;
+    }
+
+    .photo {
+      border-bottom: 3px dashed #00acf077;
+      margin: 20px;
+      padding-bottom: 10px;
+    }
+
+    .text input,
+    textarea {
+      border: 2px solid rgba(0, 0, 128, 0.5);
+      border-radius: 10px;
+      outline: none;
+      resize: none;
+    }
+
+    .p .btn {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .textmemo {
+      float: left;
+      width: 50px;
+    }
+
+    select {
+      border: 2px solid #00abf0;
+      margin-left: 15px;
+      border-radius: 5px;
+    }
+
+    .place {
+      display: flex;
+    }
+
+    .place select option {
+      background-color: #f1d8d86b;
+      color: rgba(7, 7, 175, 0.89);
+    }
+
+    .hobby {
+      accent-color: #fff;
+      outline: none;
+    }
+
+    .gender {
+      accent-color: gray;
+    }
+
+    .btn {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outside">
+    <form action="#" method="get" enctype="multipart/form-data">
+      <fieldset>
+        <legend>用戶資料<em>(必填)</em></legend>
+        <h3>Form</h3>
+
+        <div class="text">
+          <label>
+            帳戶:
+            <input id="title1" type="account" name="account" placeholder="account" size="10" maxlength="8" autofocus
+              autocomplete="off" required /></label>
+        </div>
+
+        <div class="text">
+          <label>
+            密碼:
+            <input id="title2" type="password" name="password" placeholder="password" size="10" maxlength="8"
+              required /></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>個人資料</legend>
+        <div class="text">
+          <label>身分證字號:
+            <input type="text" maxlength="10" pattern="[a-z,A-Z]{1}[1-2,8-9]{1}\d{8}" placeholder="身分證字號" />
+          </label>
+        </div>
+        <div class="text">
+          姓別:
+          <label><input type="radio" name="gender" value="male" checked class="gender" />
+            男
+          </label>
+          <label><input type="radio" name="gender" value="female" class="gender" />女</label>
+        </div>
+
+        <div class="text">
+          興趣:
+          <label><input type="checkbox" name="hobby" value="music" class="hobby" />音樂</label>
+          <label><input type="checkbox" name="hobby" value="sport" checked class="hobby" />運動</label>
+          <label><input type="checkbox" name="hobby" value="reading" class="hobby" />閱讀</label>
+          <label><input type="checkbox" name="hobby" value="movie" class="hobby" checked />電影</label>
+        </div>
+
+        <div class="text place">
+          地名:
+          <select name="place" multiple size="2">
+            <option value="Taipei">台北市</option>
+            <option value="New Taipei" selected>新北市</option>
+            <option value="Keelong">基隆市</option>
+            <option value="Taoyuan">桃園市</option>
+          </select>
+        </div>
+
+        <div class="text">
+          <label>完整地址:
+            <input type="text" name="address" size="20" required placeholder="請輸入地址" /></label>
+        </div>
+
+        <div class="text">
+          <label>喜歡的水果: <input type="text" name="fruit" list="fruit_list" />
+            <datalist id="fruit_list">
+              <option value="apple">蘋果</option>
+              <option value="grape"></option>
+              <option value="banana"></option>
+            </datalist></label>
+        </div>
+
+        <div class="text">
+          <label>生日:
+            <input type="date" name="birth" value="1996-07-23" />
+          </label>
+        </div>
+
+        <div class="text">
+          <label>
+            E-mail:
+            <input type="email" name="email" placeholder="email" required />
+          </label>
+        </div>
+
+        <div class="text">
+          <label>URL:
+            <input type="url" name="url" placeholder="請輸入網址" required />
+          </label>
+        </div>
+
+        <div class="text">
+          <label>Search: <input type="search" name="search" placeholder="search" /></label>
+        </div>
+
+        <div class="text">
+          <label>Color: <input type="color" name="color" /></label>
+        </div>
+
+        <div class="text">
+          <label>Number:
+            <input id="nember1" type="number" name="number" min="0" max="100" step="5" />
+            <input id="number2" type="text" /></label>
+        </div>
+
+        <div class="text">
+          <label>Range:
+            <input id="range1" type="range" name="range" min="0" max="100" step="5" />
+            <input id="range2" type="text" /></label>
+        </div>
+
+        <script></script>
+      </fieldset>
+
+      <fieldset>
+        <legend>其他資料</legend>
+        <div class="photo">
+          <label>
+            照片:
+            <input type="file" name="file" accept=".png,.jpg,.jpeg" required multiple /></label>
+        </div>
+
+        <div class="text">
+          <label for="title3" class="textmemo"> 意見:</label>
+          <textarea id="title3" name="memo" cols="30" rows="6" placeholder="memo" readonly>
+本條款涵蓋的範圍
+我們瞭解您可能會想略過本《服務條款》，但請務必詳閱，瞭解我們在您使用 Google 服務時致力遵守的原則，以及我們期許您遵守的行為準則。</textarea>
+        </div>
+      </fieldset>
+
+      <div class="btn">
+        <input type="submit" value="提交" />
+        <input type="reset" value="重設" disabled />
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
