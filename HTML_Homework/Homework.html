@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Document</title>
+    <style>
+      body{
+        background-image: url("./images/tomato2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1500px;
+        margin: 0 auto;
+      }
+      /* #region 標題開始 start */
+      .title {
+        height: 100px;
+      }
+      .title h1 {
+        -webkit-text-stroke: 1.3px black;
+        font-size: 50px;
+        text-align: center;
+        line-height: 100px;
+      }
+      .title a:link{
+        color: chocolate;
+        text-decoration: none;
+      }
+      .title a:visited{
+        color: chocolate;
+      }
+      .title a:hover{
+        color: salmon;
+        text-shadow: 0 0 2px salmon;
+      }
+      .titile a:active{
+        color: chocolate;
+      }
+      /* #endregion標題結束end */
+
+      /* #region banner開始 start */
+      .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .banner figure img{
+        transition: all linear 0.3s;
+      }
+      .banner figure img:hover{
+        box-shadow: 0 0 5px black;
+        transform: scale(1.004);
+      }
+      .banner figure {
+        border: 5px dashed brown;
+        padding: 10px;
+        margin: 10px;
+        float: left;
+      }
+      .banner figcaption {
+        border: 5px dotted rgb(236, 169, 24);
+        line-height: 40px;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bolder;
+        font-style: italic;
+        text-shadow: 1px 1px 1px tomato;
+        background-color: bisque;
+      }
+      .bannerR {
+        text-align: center;
+        font-size: 80px;
+        font-weight: bolder;
+        font-family: 標楷體;
+      }
+      /* #endregion banner結束 end */
+
+      /* #region content開始 start */
+      .content {
+        width: 55%;
+        border: 3px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px;
+        background-color: transparent;
+        backdrop-filter: blur(60px);
+        padding: 30px;
+        margin: 20px;
+        box-shadow: 0 0 10px black;
+      }
+      .content h1{
+        -webkit-text-stroke: 1.5px black;
+        text-shadow: 5px 5px 5px black;
+        color: tomato;
+        font-size: 50px;
+        text-align: center;
+        font-weight: border;
+        letter-spacing: 25px;
+        margin: 0 0 30px 0;
+        
+      }
+      .content figure img{
+        transition: all linear 0.3s;
+      }
+      .content figure img:hover{
+        box-shadow: 0 0 5px black;
+        transform: scale(1.006);
+      }
+      .content figure {
+        width: 60%;
+        border: 10px groove rgb(43, 100, 9);
+        padding: 5px;
+        margin: 5px;
+        float: left;
+      }
+      .content figure figcaption {
+        font-size: 20px;
+        font-weight: bolder;
+        color: navy;
+        text-align: center;
+        background-color: rgb(199, 154, 199, 0.5);
+        border: 3px dotted rgb(219, 49, 219);
+      }
+      .content figure img {
+        width: 100%;
+      }
+      .content h2 {
+        font-size: 40px;
+        text-align: center;
+      }
+      .content p {
+        text-align: justify;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.6;
+      }
+      /* #endregion content結束 結束 */
+
+      /* #region Table開始 start */
+      .recipes table {
+        margin: 20px;
+        font-size: 30px;
+        margin-top: 10px;
+        border: 10px groove rgb(233, 138, 14);
+        border-collapse: collapse;
+      }
+      td {
+        border: 3px solid tomato;
+      }
+      /* #endregion Table結束 end */
+
+      /* #region howtodo開始 start */
+      .howtodo {
+        font-size: 30px;
+        font-weight: bolder;
+      }
+      .howtodo li {
+        list-style-type: none;
+        list-style-image: url("./images/tomato3.png");
+      }
+      .howtodo2 {
+        margin-left: 40px;
+      }
+      /* #endregion howtodo結束 end */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="title">
+        <a href="https://flambo.com.tw/blogs/recipes/%E8%95%83%E8%8C%84%E7%89%9B%E8%82%89%E6%B9%AF-beef-soup-with-tomato-and-daikon-radish"><h1>蕃茄牛肉湯 | Beef Soup with Tomato and Daikon Radish</h1></a>
+      </header>
+    </div>
+
+    <article class="container">
+      <div class="banner">
+        <figure>
+          <div>
+            <a
+              href="https://flambo.com.tw/blogs/recipes/%E8%95%83%E8%8C%84%E7%89%9B%E8%82%89%E6%B9%AF-beef-soup-with-tomato-and-daikon-radish"
+              ><img src="./images/beef1.webp" alt="BEEF" title="BEEF"
+            /></a>
+          </div>
+          <figcaption>低脂版番茄牛腩湯食譜</figcaption>
+        </figure>
+        <div class="bannerR">
+          <p>蕃茄牛肉湯：直接喝或做成牛肉麵都好吃的萬用食譜</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="container">
+      <div class="content">
+        <h1>蕃茄牛肉湯</h1>
+        <figure>
+            <a
+              href="https://flambo.com.tw/blogs/recipes/%E8%95%83%E8%8C%84%E7%89%9B%E8%82%89%E6%B9%AF-beef-soup-with-tomato-and-daikon-radish"
+              >
+          <img
+            class="grid1"
+            src="./images/beef2.webp"
+            alt="BEEF"
+            title="BEEF"
+          />
+        </a>
+          <figcaption>Beef Soup with Tomato and Daikon Radish</figcaption>
+        </figure>
+        <h2 class="grid2">
+          蕃茄牛肉湯 | Beef Soup with Tomato and Daikon Radish
+        </h2>
+        <p class="grid3">
+          牛肉營養豐富，有滋養脾胃、補中益氣、强健筋骨之效。而番茄含有豐富的维他命C，番茄和牛肉可以說是絕佳的搭配，2種食材各自可以發揮自身優勢，營養更能互補增強功效。牛肉含鐵豐富，與富含番茄紅素和維生素C的番茄同時料理，可以使牛肉中的鐵質完全的被人體吸收。而在燉牛肉時，加上些番茄的"酸"，還能讓牛肉更快變爛，縮短烹調時間。番茄的酸甜搭配牛肉的鮮香，爽口解膩，讓人胃口大開。
+        </p>
+      </div>
+    </article>
+
+    <div class="container">
+      <article class="recipes">
+        <table>
+          <tr>
+            <th colspan="2">材料</th>
+          </tr>
+          <tr>
+            <td>牛肋條</td>
+            <td>600g</td>
+          </tr>
+          <tr>
+            <td>白蘿蔔</td>
+            <td>半條</td>
+          </tr>
+          <tr>
+            <td>洋蔥</td>
+            <td>1顆</td>
+          </tr>
+          <tr>
+            <td>牛蕃茄</td>
+            <td>4顆</td>
+          </tr>
+          <tr>
+            <td>青蔥</td>
+            <td>2根</td>
+          </tr>
+          <tr>
+            <td>老薑</td>
+            <td>5-8片</td>
+          </tr>
+          <tr>
+            <td>米酒</td>
+            <td>3大匙</td>
+          </tr>
+          <tr>
+            <td>醬油</td>
+            <td>3大匙</td>
+          </tr>
+          <tr>
+            <td>水</td>
+            <td>適量</td>
+          </tr>
+          <tr>
+            <td>鹽</td>
+            <td>適量</td>
+          </tr>
+          <tr>
+            <td>葵花油</td>
+            <td>適量</td>
+          </tr>
+        </table>
+      </article>
+    </div>
+
+    <footer class="container">
+      <ul class="howtodo">
+        做法
+        <ul>
+          <li>
+            牛肋條切大塊，白蘿蔔切約1.5公分厚半圓，洋蔥切絲，牛蕃茄切片，老薑切片，蔥白切段、蔥綠切蔥花。
+          </li>
+          <li>
+            <span>取一鑄鐵鍋，開中小火，加入少許油，放入老薑片，拌炒出香氣。</span>
+            <div class="howtodo2">
+            <ul>
+              <li>
+                放入牛肋條煎炒至金黃微焦後放入適量水、醬油、米酒以及2顆切片番茄
+              </li>
+              <li>煮滾後蓋上鍋蓋燉煮40分鐘</li>
+              <li>再加入白蘿蔔塊以及另外2顆切片番茄</li>
+              <li>蓋鍋蓋再續煮約20分鐘</li>
+            </ul>
+            </div>
+          </li>
+          <li>最後可加適量鹽調整味道，灑上蔥花即完成。</li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
